@@ -1,13 +1,76 @@
 @import "bourbon"
 @import "vars.sass"
+@import "fonts.sass"
+
 
 body
 	font-size: 16px
 	min-width: 320px
 	position: relative
 	line-height: 1.6
-	font-family: "RobotoRegular", sans-serif
 	overflow-x: hidden
 
 .hidden
 	display: none
+
+
+.top_section 
+	background-color: #000
+	&_nav 
+		&_left 
+			padding-top: 47px
+			.skype_logo
+				margin-left: 45px
+			.skype_descr 
+				font-size: 18px
+				font-family: 'LatoRegular', sans-serif
+				line-height: 20px
+				color: #fff
+				margin-left: 6px
+			&_chat 
+				display: inline-block
+				padding: 8px 22px 9px 51px
+				border: solid 2px #a6db37
+				border-radius: 100px
+				text-align: center
+				color: #a6db37
+				font-family: 'LatoHeavy', sans-serif
+				font-size: 14px
+				text-transform: uppercase
+				margin-left: 38px
+				padding-left: 51px
+				position: relative
+				&:after 
+					position: absolute
+					content: ''
+					width: 22px
+					height: 22.4px 
+					left: 23px
+					background: url('../img/chat.svg') top center no-repeat
+					top: 10px
+				&:hover 
+					color: #a6db37
+					text-decoration: none
+
+		&_title 
+			font-family: 'LatoHeavy', sans-serif
+			font-size: 14px
+			text-transform: uppercase
+			letter-spacing: 0.9px
+			line-height: 18px
+			color: #a6db37
+			margin-top: 39px
+			margin-bottom: 0
+		&_social 
+			margin-top: 9px
+			&_item 
+				display: inline-block
+				margin-right: 21px
+				span 
+					font-family: 'LatoRegular', sans-serif
+					font-size: 12px
+					color:#5c7dbd
+					line-height: 18px
+.solution_section 
+	 border: solid 15px rgba(92, 74, 215, 0.23)
+	 background-color: #000
