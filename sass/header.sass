@@ -2,7 +2,6 @@
 @import "vars.sass"
 @import "fonts.sass"
 
-
 body
 	font-size: 16px
 	min-width: 320px
@@ -16,31 +15,42 @@ body
 h2 
 	margin: 0
 
+.nopadding 
+	padding: 0 !important	
+
 .top_section 
-	background-color: #000
+	background: url('../img/top.jpg') center top no-repeat
 	&_nav 
 		&_left 
 			padding-top: 47px
 			.skype_logo
-				margin-left: 45px
+				margin-left: 62px
 			.skype_descr 
 				font-size: 18px
 				font-family: 'LatoRegular', sans-serif
 				line-height: 20px
 				color: #fff
+				font-weight: normal
+				font-style: normal
+				font-stretch: normal
+				letter-spacing: normal
 				margin-left: 6px
 			&_chat 
 				display: inline-block
-				padding: 8px 22px 9px 51px
+				padding-left: 51px
+				padding-right: 22px
+				padding-top: 7px
+				padding-bottom: 6px
 				border: solid 2px #a6db37
 				border-radius: 100px
+				letter-spacing: normal
 				text-align: center
+				line-height: 1.43
 				color: #a6db37
 				font-family: 'LatoHeavy', sans-serif
 				font-size: 14px
 				text-transform: uppercase
 				margin-left: 38px
-				padding-left: 51px
 				position: relative
 				&:after 
 					position: absolute
@@ -68,6 +78,8 @@ h2
 			&_item 
 				display: inline-block
 				margin-right: 21px
+				&:last-child 
+					margin-right: 0
 				span 
 					font-family: 'LatoRegular', sans-serif
 					font-size: 12px
@@ -75,11 +87,13 @@ h2
 					line-height: 18px
 .solution_section 
 	padding-top: 36px
-	background-color: #000
 	&_problems 
-		border: solid 15px rgba(92, 74, 215, 0.23)
+		background: url('../img/border.svg') center top no-repeat
+		background-size: contain
 		padding-left: 53.9px
 		padding-top: 72.4px
+		position: relative
+		padding-bottom: 83.8px
 		&_title 
 			font-family: 'BebasBold', sans-serif
 			font-size: 62px
@@ -95,13 +109,35 @@ h2
 			color: #53aff5
 			line-height: 30px
 			margin-bottom: 30.2px
+		&_icon 
+			width: 68.1px
+			height: 74px
+			background: url('../img/top_icon.svg') center -8px no-repeat			
+			text-align: center
+			padding-top: 17px
+			line-height: 1.13
+			position: absolute
+			right: -15.1px
+			top: -15.1px
+			text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25)
+			font-family: 'LatoBlack', sans-serif
+			span 
+				font-family: 'BebasBold', sans-serif
+				font-size: 15px
+				letter-spacing: 0.9px
+				line-height: 1.29
+				text-transform: uppercase
+
 		&_boost 
 			width: 398px
 			max-width: 100%
 			height: 305px
-			background-image: linear-gradient(to right, rgba(7, 12, 25, 0.84), #221435)
+			background-image: linear-gradient(to right, rgba(7, 12, 25, 0.75), #221435)
 			padding-top: 47px
 			padding-left: 56.6px
+			margin-right: 6.5px
+			margin-top: 12px
+
 
 			&_title 
 				font-family: 'BebasBold', sans-serif
@@ -111,7 +147,9 @@ h2
 				color: #f2f9ff
 				text-shadow: 0 0 10px rgba(0, 144, 255, 0.6)
 				text-transform: uppercase
-				line-height: 1.06;
+				line-height: 1.06
+				margin-bottom: 15px
+
 			&_button 
 				display: block
 				height: 52px
@@ -141,5 +179,29 @@ h2
 					text-decoration: none
 				&:active 
 					color: #000
-					text-decoration: none					
+					text-decoration: none		
+
+.advantages_section 
+	margin-top: 279.2px
+	&_item 
+		text-align: center
+		margin-bottom: 101px
+		&_image 
+
+		&_title 
+			text-shadow: 0 0 10px rgba(185, 254, 43, 0.2)
+			color: #a6db37
+			font-family: 'BebasBold', sans-serif
+			line-height: 2.31
+			font-size: 26px
+			margin-top: 13px
+			letter-spacing: 0.9px
+			margin-bottom: 3px
+		&_text 	
+			color: #fff		
+			font-family: 'LatoRegular', sans-serif
+			font-size: 16px
+			opacity: 0.7
+			line-height: 1.69
+			width: 354px
 

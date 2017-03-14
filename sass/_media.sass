@@ -4,12 +4,46 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
+	.top_section 
+		background-color: #000
+		&_nav 
+			&_left 
+				.skype_logo
+					margin-left: 32px
+				&_chat 
+					margin-left: 18px
+			&_title 
+				font-size: 13px
+			&_social 
+				margin-top: 9px
+				&_item 
+					display: inline-block
+					margin-right: 3px
+					&:last-child 
+						margin-right: 0
+	.solution_section 
+		&_problems 
+			&_title 
+				font-size: 43px
+			&_subtitle
+				margin-bottom: 25px
+
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
+	.top_section_nav
+		.pull-right 
+			float: none !important
+	.solution_section 
+		&_problems 
+			padding-top: 64.4px;
+			background-size: contain !important
+			&_title 
+				font-size: 43px
+			&_subtitle
+				margin-bottom: 25px
+
 
 
 /* Small Devices, Tablets */
@@ -36,6 +70,46 @@
 		-ms-animation: none !important
 		animation: none !important
 
+	.top_section 
+		background-position: 30% 20% !important
+		&_nav 
+			text-align: center
+			&_left 
+
+				img 
+					display: block !important
+				.skype_logo
+					display: inline-block !important
+					margin-left: 0 !important
+
+				.skype_descr 
+					margin-top: 20px
+					display: inline-block
+				&_chat 
+					display: block !important
+					margin-top: 20px
+				.logo 
+					margin: auto
+			&_title 
+			&_social 
+				&_item 
+					&:last-child 
+						margin-right: 0
+	.solution_section 
+		&_problems 
+			background: transparent
+			text-align: center
+			padding-left: 0
+			&_title 
+			&_subtitle
+			&_icon 
+				display: none
+			&_boost 
+				float: none !important 
+				margin: auto
+				padding-left: 0
+				&_button 
+					margin: auto
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
