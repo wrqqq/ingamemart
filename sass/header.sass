@@ -2,6 +2,7 @@
 @import "vars.sass"
 @import "fonts.sass"
 
+
 body
 	font-size: 16px
 	min-width: 320px
@@ -204,4 +205,127 @@ h2
 			opacity: 0.7
 			line-height: 1.69
 			width: 354px
+			max-width: 100%
+			margin: auto
+
+
+.products_section
+	background: url('../img/prod_bg.jpg') center top no-repeat
+	padding-top: 136px
+	padding-bottom: 140px
+	&_title 
+		text-align: center
+		letter-spacing: 2.1px
+		line-height: 0.97
+		font-size: 62px
+		font-family: 'BebasBold', sans-serif
+		color: #f2f9ff
+		text-shadow: 0 0 10px rgba(0, 144, 255, 0.6)
+		margin-top: 100px
+		margin-bottom: 0
+		span 
+			color: #a6db37
+	&_subtitle 
+		text-align: center
+		font-family: 'LatoRegular', sans-serif
+		opacity: 0.7
+		font-size: 16px
+		line-height: 1.5
+		color: #fff
+		margin-top: 49px
+	&_form 
+		width: 585px
+		margin: auto
+		max-width: 100%
+		input 
+			display: block
+			width: 261.5px
+			height: 52px
+			border: solid 2px rgba(255, 255, 255, 0.5)
+			border-radius: 2px
+			outline: none
+			background: transparent
+			margin-right: 20px
+			max-width: 48%
+			display: inline-block
+			font-family: 'LatoRegular', sans-serif
+			opacity: 0.4
+			font-size: 14px
+			padding-left: 18.5px
+			color: #fff
+			&::-webkit-input-placeholder 
+				margin-left: 20px
+				color: #fff
+			&:-moz-placeholder
+				color: #fff
+			&:-ms-input-placeholder
+				color: #fff
+			&::-moz-placeholder
+				color: #fff
+		button 
+			border: solid 2px #a6db37
+			border-radius: 2px
+			color: #a6db37
+			background: transparent
+			width: 280px
+			height: 52px
+			max-width: 44%		
+			display: inline-block	
+			font-family: 'BebasBold', sans-serif
+			font-size: 20px
+			text-transform: uppercase
+			letter-spacing: 2px
+	&_item 
+		text-align: center
+		width: 324px
+		margin: auto 
+		max-width: 100%
+		padding-top: 1px
+		background:  url('../img/prod1.jpg') center -11px no-repeat
+		height: 412px
+		&_place 
+			font-size: 28px
+			font-family: 'BebasBold', sans-serif
+			line-height: 2.14
+			letter-spacing: 3.2px
+			color: #f2f9ff
+			text-shadow: 0 0 10px rgba(0, 144, 255, 0.6)
+			margin-top: 23.3px
+		&_type 
+			margin-top: 126px
+			font-family: 'BebasBold', sans-serif
+			line-height: 1.09
+			letter-spacing: 1.7px
+			color: #f2f9ff
+			font-size: 55px
+			text-shadow: 0 0 10px rgba(0, 144, 255, 0.6)
+			margin-bottom: 0
+		&_rate 
+			font-family: 'LatoRegular', sans-serif
+			font-size: 18px
+			line-height: 1.67
+			font-weight: normal
+			letter-spacing: 1px
+			color: #fff
+		&_price 
+			font-family: 'BebasBold', sans-serif
+			font-size: 44px
+			line-height: 1.59
+			color: #a6db37
+			text-shadow: 0 0 8px rgba(185, 254, 43, 0.3)	
+			margin: 0
+		&-big 
+			background: url('../img/prod2.jpg') center -8px no-repeat
+			width: 378px
+			height: 485px
+			position: relative
+			bottom: 34.5px
+			.products_section_item_place 
+				margin-top: 21.1px
+			.products_section_item_type
+				margin-top: 196px
+
+
+
+
 

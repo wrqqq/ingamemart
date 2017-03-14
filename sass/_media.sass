@@ -5,6 +5,7 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 	.top_section 
+		background-size: cover
 		background-color: #000
 		&_nav 
 			&_left 
@@ -110,10 +111,23 @@
 				padding-left: 0
 				&_button 
 					margin: auto
+	.products_section
+		background-size: cover
+		&_item 
+			margin-bottom: 30px
+			&-big 
+				width: 370px
+				max-width: 100%
+				margin-top: 68px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+	.products_section
+		&_form 
+			input 
+				margin-right: 5px
+			button 
+				font-size: 12px
 
 
 /* Custom, iPhone Retina */
