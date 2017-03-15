@@ -36,6 +36,9 @@ h2
 				font-stretch: normal
 				letter-spacing: normal
 				margin-left: 6px
+				&:hover 
+					text-decoration: none
+					color: #a6db37
 			&_chat 
 				display: inline-block
 				padding-left: 51px
@@ -53,6 +56,7 @@ h2
 				text-transform: uppercase
 				margin-left: 38px
 				position: relative
+				transition: 0.3s ease
 				&:after 
 					position: absolute
 					content: ''
@@ -62,8 +66,14 @@ h2
 					background: url('../img/chat.svg') top center no-repeat
 					top: 10px
 				&:hover 
-					color: #a6db37
+					color: #000
 					text-decoration: none
+					background: #a6db37
+					box-shadow: 0 0 5px 0 rgba(166, 219, 55, 0.5)
+					border: solid 2px #a6db37
+				&:hover:after
+					background: url('../img/chat_hov.svg') top center no-repeat
+
 
 		&_title 
 			font-family: 'LatoHeavy', sans-serif
@@ -79,6 +89,18 @@ h2
 			&_item 
 				display: inline-block
 				margin-right: 21px
+				cursor: pointer
+				position: relative
+				z-index: 3
+				&:hover 
+					span
+						color: #53aff5
+						position: relative
+						z-index: 1
+					&:first-child
+						img 
+
+
 				&:last-child 
 					margin-right: 0
 				span 
@@ -166,6 +188,9 @@ h2
 				font-style: normal
 				font-stretch: normal
 				letter-spacing: 1.5px
+				transition: 0.2s ease
+				&:hover 
+					box-shadow: 0 0 10px 0 rgba(185, 254, 43, 0.51)
 				span 
 					font-size: 30px
 					letter-spacing: 1.9px
@@ -251,6 +276,7 @@ h2
 			font-size: 14px
 			text-indent: 18.5px
 			color: #fff
+			transition: 0.2s ease
 			&::-webkit-input-placeholder 
 				opacity: 0.4
 				color: #fff
@@ -263,6 +289,8 @@ h2
 			&::-moz-placeholder
 				color: #fff
 				opacity: 0.4
+			&:focus 
+				border: solid 2px rgba(255, 255, 255, 0.85)
 		button 
 			border: solid 2px #a6db37
 			border-radius: 2px
@@ -276,14 +304,30 @@ h2
 			font-size: 20px
 			text-transform: uppercase
 			letter-spacing: 2px
+			transition: 0.4s ease
+			&:hover 
+				background-color: #bafe2b
+				box-shadow: 0 0 10px 0 rgba(185, 254, 43, 0.51)
+				color: #000
+				border: solid 2px #bafe2b
 	&_item 
 		text-align: center
 		width: 324px
-		margin: auto 
+		position: relative
+		margin: auto
 		max-width: 100%
 		padding-top: 1px
-		background:  url('../img/prod1.jpg') center -11px no-repeat
+		background:  url('../img/prod1.jpg') center -16px no-repeat
 		height: 412px
+		cursor: pointer
+		border: 4px solid transparent
+		border-radius: 3px
+		transition: 0.2s ease
+
+		&:hover 
+			border: 4px solid #a6db37
+			box-shadow: 0 0 20px 0 rgba(185, 254, 43, 0.25)
+
 		&_place 
 			font-size: 28px
 			font-family: 'BebasBold', sans-serif
@@ -316,7 +360,7 @@ h2
 			text-shadow: 0 0 8px rgba(185, 254, 43, 0.3)	
 			margin: 0
 		&-big 
-			background: url('../img/prod2.jpg') center -8px no-repeat
+			background: url('../img/prod2.jpg') center -12px no-repeat
 			width: 378px
 			height: 485px
 			position: relative
@@ -366,6 +410,11 @@ h2
 			line-height: 3
 			color: #f2f9ff
 			text-shadow: 0 0 10px rgba(0, 144, 255, 0.6)
+			transition: 0.2s ease 
+			cursor: pointer
+			&:hover 
+				color: #a6db37
+				text-shadow: 0 0 10px rgba(166, 219, 55, 0.32)
 			position: relative
 			&:before 
 				content: ''
@@ -448,6 +497,7 @@ h2
 			text-indent: 18.5px
 			color: #fff
 			box-sizing: border-box
+			transition: 0.2s ease
 			&:last-of-type
 				margin-right: 0
 			&::-webkit-input-placeholder 
@@ -462,6 +512,9 @@ h2
 
 			&::-moz-placeholder
 				color: #fff
+			&:focus 
+  				border: solid 2px rgba(255, 255, 255, 0.85)
+
 
 		textarea 
 			width: 580px
@@ -480,6 +533,7 @@ h2
 			display: block	
 			text-indent: 18.5px	
 			resize: none
+			transition: 0.2s ease
 			&::-webkit-input-placeholder 
 				color: #fff
 				font-family: 'LatoRegular', sans-serif
@@ -492,6 +546,8 @@ h2
 
 			&::-moz-placeholder
 				color: #fff	
+			&:focus 
+  				border: solid 2px rgba(255, 255, 255, 0.85)
 		
 		button 
 			border: solid 2px #a6db37
@@ -507,6 +563,13 @@ h2
 			text-transform: uppercase
 			letter-spacing: 2px
 			margin-top: 30px
+			transition: 0.2s ease
+			&:hover 
+				background-color: #bafe2b
+				box-shadow: 0 0 10px 0 rgba(185, 254, 43, 0.51)
+				color: #000
+				border: solid 2px #bafe2b
+
 
 
 footer 
