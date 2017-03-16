@@ -17,6 +17,11 @@ $(function() {
 	      $(document).on('click', '.solution_section_problems_boost_button ', function(e){return _this.openModal()});
 	      $(document).on('click', '.popup_form_close ', function(e){return _this.closeModal()});
 	      $(document).on('click', '.popup_form_cancel ', function(e){return _this.closeModal()});
+	      $(document).on('click', '.arrow ', function(e){return _this.slideTop()});
+	      $(document).on('click', '.arrow ', function(e){return _this.slideTop()});
+	      $(document).scroll('body ', function(e){return _this.scrollPage(e)});
+
+
 	    },
 	    changeImage: function(ev) {
 	    	if(ev.currentTarget == $('.top_section_nav_social_item')[0]) {
@@ -79,6 +84,16 @@ $(function() {
 	    	setTimeout(function () {
                 $('.popup_wrapper').hide();	  
             }, 700);  	   	
+	    },
+	    slideTop: function(e) {
+	    	$("html, body").animate({ scrollTop: 0 }, "slow");
+	    },
+	    scrollPage: function(e) {
+	    	if ($(window).scrollTop() > 50) {
+	    		$('.arrow').show();
+	    	} else {
+	    		$('.arrow').hide();
+	    	}
 	    }
 
 	/*//E-mail Ajax Send

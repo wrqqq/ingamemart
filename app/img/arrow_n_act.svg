@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="76px" height="76px" viewBox="0 0 76 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>DCFF5DA1-8705-4CE5-BF0E-03CF4FD1C2BC</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M27.9999963,56.0000074 C43.4551174,56.0000074 56,43.4551985 56,28.0000111 C56,12.5447426 43.4551174,-3.97903932e-13 27.9999963,-3.97903932e-13 C12.5448826,-3.97903932e-13 0,12.5447426 0,28.0000111 C0,43.4551985 12.5448826,56.0000074 27.9999963,56.0000074 Z" id="path-1"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.729411765   0 0 0 0 0.996078431   0 0 0 0 0.168627451  0 0 0 0.507727582 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M28.7772099,44.6575362 L41.3035314,32.8680641 C41.6013629,32.5826852 41.5918577,32.1066116 41.3263735,31.8318432 C41.056763,31.5525801 40.5734683,31.5206748 40.2901526,31.786159 L29.0076204,42.401326 L29.0076204,12.736842 C29.0076204,12.3298842 28.6777362,12 28.2707784,12 C27.8638205,12 27.5339364,12.3298842 27.5339364,12.736842 L27.5339364,42.401326 L16.2510431,31.786159 C15.9677273,31.5208222 15.4570958,31.5486011 15.1918327,31.8318432 C14.9265696,32.1152326 14.9314327,32.559622 15.2375169,32.8680641 L27.7638311,44.6575362 C27.9362521,44.7976099 28.1139784,44.8509573 28.2933994,44.8417467 C28.4731152,44.8321678 28.6543046,44.7607678 28.7772099,44.6575362 Z" id="path-3"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.729411765   0 0 0 0 0.996078431   0 0 0 0 0.168627451  0 0 0 0.507727582 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UI_Kit" transform="translate(-121.000000, -2671.000000)">
+            <g id="Get-in-touch" transform="translate(131.000000, 2290.000000)">
+                <g id="arrows" transform="translate(0.000000, 271.000000)">
+                    <g id="Group" transform="translate(0.000000, 120.000000)">
+                        <g id="Shape" fill-rule="nonzero" transform="translate(28.000000, 28.000004) scale(1, -1) translate(-28.000000, -28.000004) ">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#BAFE2B" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <g id="Path" transform="translate(28.263113, 28.421377) scale(1, -1) translate(-28.263113, -28.421377) ">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                            <use fill="#000000" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
