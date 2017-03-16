@@ -18,6 +18,10 @@ h2
 
 .nopadding 
 	padding: 0 !important	
+.blur 
+	-webkit-filter: blur(7px)
+  	filter: blur(7px) 
+
 
 .top_section 
 	background: url('../img/top.jpg') center top no-repeat
@@ -191,6 +195,15 @@ h2
 				transition: 0.2s ease
 				&:hover 
 					box-shadow: 0 0 10px 0 rgba(185, 254, 43, 0.51)
+				&:active 
+					text-decoration: none
+					color: #000
+				&:visited 
+					text-decoration: none
+					color: #000
+				&:link 
+					text-decoration: none
+					color: #000										
 				span 
 					font-size: 30px
 					letter-spacing: 1.9px
@@ -391,17 +404,30 @@ h2
 		margin-top: 50px
 		&_item
 			text-align: center
+			cursor: pointer
+			&:hover 
+				.raid_section_players_name
+					color: #a6db37
+					text-shadow: 0 0 10px rgba(166, 219, 55, 0.32)
 			&-left 
 				width: 500px
 				margin: auto
 				.raid_section_players_name
 					margin-left: 36px
+				img 
+					width: 464px
+					height: 518px
+
+
 			&-right
 				width: 357px
 				margin: auto
 				.raid_section_players_name
 					&:before
 						background: url('../img/horde.png') center top no-repeat !important
+				img 
+					width: 346px
+					height: 516px
 
 		&_name 
 			margin: auto
@@ -412,9 +438,6 @@ h2
 			text-shadow: 0 0 10px rgba(0, 144, 255, 0.6)
 			transition: 0.2s ease 
 			cursor: pointer
-			&:hover 
-				color: #a6db37
-				text-shadow: 0 0 10px rgba(166, 219, 55, 0.32)
 			position: relative
 			&:before 
 				content: ''
@@ -518,6 +541,7 @@ h2
 
 		textarea 
 			width: 580px
+			max-width: 100%
 			margin-top: 30px
 			height: 98px
 			padding-top: 10px
@@ -589,6 +613,138 @@ footer
 		&_item 
 			display: inline-block
 			margin-right: 44.4px
+
+
+.popup_wrapper 
+	width: 100%
+	height: 100%
+	z-index: 50
+	position: fixed
+	background: url('../img/popup.png') center repeat
+	display: none
+	.popup_form 
+		margin: auto
+		background: url('../img/bg_form.png') -15% 0% no-repeat
+		padding-left: 95px
+		padding-top: 170px
+		padding-bottom: 75px
+		position: relative
+		&_close
+			position: absolute
+			left: -62px
+			top: 58px
+			width: 32px
+			height: 32px
+			opacity: 0.8
+			cursor: pointer
+			&:hover 
+				opacity: 1
+
+			&:before,
+			&:after
+				position: absolute
+				left: 15px
+				content: ' '
+				height: 36px
+				width: 3px
+				background-color: #98c937
+			&:before
+				transform: rotate(45deg)
+			&:after
+				transform: rotate(-45deg) 
+		&_title 
+			color: #f2f9ff
+			text-shadow: 0 0 10px rgba(0, 144, 255, 0.6)
+			letter-spacing: 1.9px
+			font-family: 'BebasBold', sans-serif
+			text-transform: uppercase
+			font-size: 90px
+			line-height: 1.1
+			span 
+				text-shadow: 0 0 10px rgba(185, 254, 43, 0.3)
+				color: #a6db37	
+		&_text 
+			font-family: 'LatoRegular', sans-serif
+			font-size: 16px
+			line-height: 1.75
+			letter-spacing: normal
+			color: #fff
+			margin-top: 19px
+			span 
+				font-size: 18px
+				font-family: 'LatoHeavy', sans-serif
+				text-transform: uppercase
+				color: #97d72b
+				margin-left: 2px
+		input 
+			display: block
+			width: 278px
+			height: 52px
+			border: solid 2px rgba(255, 255, 255, 0.5)
+			border-radius: 2px
+			outline: none
+			background: transparent
+			margin-right: 19px
+			max-width: 48%
+			display: inline-block
+			font-family: 'LatoRegular', sans-serif
+			font-size: 14px
+			text-indent: 18.5px
+			color: #fff
+			box-sizing: border-box
+			transition: 0.2s ease
+			margin-top: 32px
+			&:last-of-type
+				margin-right: 0
+			&::-webkit-input-placeholder 
+				color: #fff
+				font-family: 'LatoRegular', sans-serif
+				opacity: 0.4
+			&:-moz-placeholder
+				color: #fff
+
+			&:-ms-input-placeholder
+				color: #fff
+
+			&::-moz-placeholder
+				color: #fff
+			&:focus 
+  				border: solid 2px rgba(255, 255, 255, 0.85)		
+		button 
+			border: solid 2px #a6db37
+			border-radius: 2px
+			color: #a6db37
+			background: transparent
+			width: 280px
+			height: 52px
+			max-width: 44%		
+			display: inline-block	
+			font-family: 'BebasBold', sans-serif
+			font-size: 20px
+			text-transform: uppercase
+			letter-spacing: 2px
+			margin-top: 30px
+			transition: 0.2s ease
+			&:hover 
+				background-color: #bafe2b
+				box-shadow: 0 0 10px 0 rgba(185, 254, 43, 0.51)
+				color: #000
+				border: solid 2px #bafe2b
+		.popup_form_cancel
+			display: inline-block
+			margin-left: 28px
+			font-family: 'LatoRegular', sans-serif
+			font-size: 16px
+			color: #a6db37
+			text-shadow: 0 0 10px rgba(185, 254, 43, 0.3)
+			cursor: pointer
+			&:hover 
+				text-shadow: 0 0 10px rgba(185, 254, 43, 0.7)
+
+
+
+
+	
 
 
 
